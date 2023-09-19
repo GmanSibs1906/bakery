@@ -1,5 +1,5 @@
 import React from "react";
-import { banner } from "../assets/images/images";
+import { banner } from "../assets/images/";
 import Product from "./componants/products/Product";
 
 function Home() {
@@ -12,9 +12,9 @@ function Home() {
       />
 
 
-      <div className="  absolute top-0 z-10 w-full h-full flex items-center justify-center ">
+      <div className="  absolute top-0 z-10 w-full h-full flex justify-center ">
         {/* semi transparent text and button container */}
-        <div class="bg-opacity-10 backdrop-blur-sm p-4 rounded-md bg-red-200 flex flex-col items-center justify-center px-[50px] border border-red-200 ">
+        <div class="bg-opacity-10 backdrop-blur-sm p-4 rounded-md bg-red-200 flex flex-col items-center justify-center px-[50px] border border-red-200 h-[300px] mt-[10%] ">
           <h1 className=" text-[#80461B] text-[120px] font-custom ">Wheaty Bakery</h1>
           <button className=" w-[100px] h-[40px] rounded-md border border-[#80461B] cursor-pointer text-[#80461B] bg-white hover:bg-red-200 hover:text-white ">
             Shop
