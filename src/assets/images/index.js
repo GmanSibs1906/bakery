@@ -1,3 +1,13 @@
+
+// navbar
+import basket from  "./basket.png";
+
+// footer
+import game from "./game.jpg";
+import portfolio from "./portfolio.jpg";
+import profileCard from "./profileCard.jpg";
+import boostrap from "./boostrap.jpg";
+
 // home banner 
 import banner from "./baker.jpg";
 import wheat from "./wheat.png";
@@ -16,10 +26,18 @@ import milkTart from "./milk-tart.jpg";
 import appleTart from "./mini-apple-tart.jpg";
 import vanillaCupcake from "./vanilla-bean-cupcake.webp";
 import birthdayCake from "./vanilla-birthday-cake.webp";
-import veganCupcake from "./vegan-vanilla-cupcake.webp";
 
 
 export {
+    // navbar
+    basket,
+
+    // footer
+    game,
+    portfolio,
+    profileCard,
+    boostrap,
+
     // home banner 
     banner,
     wheat,
@@ -38,5 +56,4 @@ export {
     appleTart,
     vanillaCupcake,
     birthdayCake,
-    veganCupcake,
 }

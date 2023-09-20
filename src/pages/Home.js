@@ -30,10 +30,10 @@ function Home() {
 
       {/* shop section */}
       <section
-        className=" w-full flex flex-col justify-center items-center mt-[40px] "
+        className=" w-full flex flex-col justify-center items-center mt-[60px] "
         id="shop"
       >
-        <h1 className=" text-[50px] font-custom text-[#80461B] ">Shop</h1>
+        <h1 className=" text-[40px] font-custom text-[#80461B] z-50 ">Welcome</h1>
         <div className="flex flex-wrap w-full justify-evenly ">
           {productDada.map((item) => (
             <Product

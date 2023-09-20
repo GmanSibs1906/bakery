@@ -11,7 +11,6 @@ import {
     appleTart,
     vanillaCupcake,
     birthdayCake,
-    veganCupcake,
 } from "../images";
 
 export const products = [
@@ -108,13 +107,5 @@ export const products = [
         desc: "Colorful birthday cake with sprinkles",
         price: 40,
         cat: "cake"
-    },
-    {
-        id: "312",
-        name: "Vegan Cupcake",
-        image: veganCupcake,
-        desc: "Delicious vegan-friendly cupcake",
-        price: 26,
-        cat: "cupCake"
     },
 ]
