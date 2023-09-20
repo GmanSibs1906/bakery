@@ -4,7 +4,8 @@ import { basket } from "../../assets/images";
 function Navbar() {
   return (
     <div className=" fixed top-0 z-50 w-full h-[50px] bg-[#80461B] bg-opacity-10 backdrop-blur-sm flex justify-between items-center ">
-      <div className=" ml-[20px] text-white bg-[#80461B] font-custom text-[20px] backdrop-blur-lg p-[5px] rounded-md ">
+    <div className="flex md:hidden ml-[20px]">Menu</div>
+      <div className="hidden md:flex ml-[20px] text-white bg-[#80461B] font-custom text-[20px] backdrop-blur-lg p-[5px] rounded-md ">
         Wheaty Bakery
       </div>
       <div className=" relative ">
