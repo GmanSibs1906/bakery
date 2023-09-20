@@ -1,5 +1,5 @@
 import React from "react";
-import { basket } from "../assets/images";
+import { basket } from "../../assets/images";
 
 function Navbar() {
   return (

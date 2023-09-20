@@ -6,7 +6,7 @@ import basket from  "./basket.png";
 import game from "./game.jpg";
 import portfolio from "./portfolio.jpg";
 import profileCard from "./profileCard.jpg";
-import boostrap from "./boostrap.jpg";
+import bot from "./bot.jpg";
 
 // home banner 
 import banner from "./baker.jpg";
@@ -36,7 +36,7 @@ export {
     game,
     portfolio,
     profileCard,
-    boostrap,
+    bot,
 
     // home banner 
     banner,
