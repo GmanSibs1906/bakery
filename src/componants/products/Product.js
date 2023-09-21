@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Product({ image, name, price }) {
+function Product({ image, name, price, id }) {
   return (
-    <div className=" w-[300px] border border-[#80461B] flex flex-col my-[40px] mx-[50px] rounded-lg text-[#80461B] ">
+    <Link 
+    to={`product/${id}`} 
+    className=" w-[300px] border border-[#80461B] flex flex-col my-[40px] mx-[50px] rounded-lg text-[#80461B] "
+    >
       <img
         src={image}
         alt=""
@@ -19,7 +23,7 @@ function Product({ image, name, price }) {
           </button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

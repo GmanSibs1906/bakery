@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes> 
         <Route path="/" exact element={<Home />} />
-        <Route path="/product" element={<Product />} />S
+        <Route path="/product/:id" element={<Product />} />S
       </Routes>
     </Router>
   );

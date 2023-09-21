@@ -15,7 +15,7 @@ import {
 
 export const products = [
     {
-        id: "301",
+        product_id: "301",
         name: "Banana Muffin",
         image: bananaMuffin,
         desc: "Delicious banana flavoured muffins",
@@ -23,7 +23,7 @@ export const products = [
         cat: "cupCake"
     },
     {
-        id: "302",
+        product_id: "302",
         name: "Challah Rolls",
         image: challahRolls,
         desc: "Freshly baked challah rolls",
@@ -38,7 +38,7 @@ export const products = [
         cat: "cake"
     },
     {
-        id: "303",
+        product_id: "303",
         name: "Chocolate Cake",
         image: chocolateCake,
         desc: "Rich and decadent chocolate cake",
@@ -46,7 +46,7 @@ export const products = [
         cat: "cake"
     },
     {
-        id: "304",
+        product_id: "304",
         name: "French Pastries",
         image: frenchPastries,
         desc: "Assortment of delicious French pastries",
@@ -54,7 +54,7 @@ export const products = [
         cat: "bread"
     },
     {
-        id: "305",
+        product_id: "305",
         name: "Fruit Cheese",
         image: fruitCheese,
         desc: "Creamy fruit-flavored cheese cake",
@@ -62,7 +62,7 @@ export const products = [
         cat: "cake"
     },
     {
-        id: "306",
+        product_id: "306",
         name: "Garlic Rolls",
         image: garlicRolls,
         desc: "Garlic-infused soft rolls",
@@ -70,7 +70,7 @@ export const products = [
         cat: "bread"
     },
     {
-        id: "307",
+        product_id: "307",
         name: "Homemade Cupcakes",
         image: homemadeCupcakes,
         desc: "Homemade assorted cupcakes",
@@ -85,7 +85,7 @@ export const products = [
         cat: "pastry"
     },
     {
-        id: "308",
+        product_id: "308",
         name: "Apple Tart",
         image: appleTart,
         desc: "Delicious apple tart with a flaky crust",
@@ -93,7 +93,7 @@ export const products = [
         cat: "pastry"
     },
     {
-        id: "309",
+        product_id: "309",
         name: "Vanilla Cupcake",
         image: vanillaCupcake,
         desc: "Classic vanilla-flavored cupcake",
@@ -101,7 +101,7 @@ export const products = [
         cat: "cupCake"
     },
     {
-        id: "310",
+        product_id: "310",
         name: "Birthday Cake",
         image: birthdayCake,
         desc: "Colorful birthday cake with sprinkles",

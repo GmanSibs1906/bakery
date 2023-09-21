@@ -41,7 +41,7 @@ function Home() {
               image={item.image}
               name={item.name}
               price={item.price}
-              id={item.id}
+              id={item.product_id}
             />
           ))}
         </div>
