@@ -6,21 +6,20 @@ import { products } from "../assets/data/productData";
 function Product() {
 
     const { id } = useParams();
-    const [displayProduct, setDisplayProduct] = useState("");
     const [product, setProduct] = useState({});
 
     useEffect(()=> {
         products.map((item) => {
-            if (item.product_id == id) {
+            if (item.product_id === id) {
                 setProduct(item)
             }
         })
     }, [product])
 
   return (
-    <div className=" flex flex-col w-full justify-center items-center mt-[-50px] ">
+    <div className=" flex flex-col w-full justify-center items-center mt-[-20px] md:mt-[-50px] ">
         {/* product info */}
-      <div className="  bg-[#80461B] bg-opacity-10 backdrop-blur-sm flex w-full justify-center items-center h-[450px] pt-[100px] pb-[20px]  ">
+      <div className="  bg-[#80461B] bg-opacity-10 backdrop-blur-sm flex flex-col md:flex-row w-full justify-center items-center h-[530px] md:h-[450px] pt-[100px] pb-[20px]  ">
         {/* left side ---- image container */}
         <div className=" w-[50vw] flex h-full justify-center items-center ">
           <img
@@ -31,7 +30,7 @@ function Product() {
         </div>
         {/* right side ---- product details */}
         <div className=" w-[50vw] h-full flex flex-col justify-evenly items-start ">
-          <div className=" w-full font-bold text-[22px] mt-[50px] ">
+          <div className=" w-full font-bold text-[22px] md:mt-[50px] ">
             {product.name}
           </div>
           <div className=" w-full text-sm font-light text-slate-700 ">R{product.price}</div>
@@ -51,10 +50,10 @@ function Product() {
       <div className=" flex flex-col w-full mb-[50px] " >
         <div className=" w-full text-center my-[30px] font-custom text-[30px] text-[#80461B] "> Related Products </div>
         <div className=" w-full flex justify-center ">
-            <div className=" w-[75vw] flex justify-evenly items-center " >
-                <img src={milkTart} alt="" className=" w-[150px] object-contain rounded-md " />
-                <img src={milkTart} alt="" className=" w-[150px] object-contain rounded-md" />
-                <img src={milkTart} alt="" className=" w-[150px] object-contain rounded-md" />
+            <div className=" w-[75vw] flex flex-col md:flex-row justify-evenly items-center " >
+                <img src={milkTart} alt="" className=" w-[150px] object-contain rounded-md my-[10px] " />
+                <img src={milkTart} alt="" className=" w-[150px] object-contain rounded-md my-[10px]" />
+                <img src={milkTart} alt="" className=" w-[150px] object-contain rounded-md my-[10px]" />
             </div>
         </div>
       </div>
