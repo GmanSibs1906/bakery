@@ -1,11 +1,19 @@
 import React from "react";
 import { basket } from "../../assets/images";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/`);
+  };
+
   return (
     <div className=" fixed top-0 z-50 w-full h-[50px] bg-[#80461B] bg-opacity-10 backdrop-blur-sm flex justify-between items-center ">
     <div className="flex md:hidden ml-[20px]">Menu</div>
-      <div className="hidden md:flex ml-[20px] text-[#80461B] font-custom text-[20px]  rounded-md ">
+      <div onClick={handleClick} className="cursor-pointer md:flex ml-[20px] text-[#80461B] font-custom text-[20px]  rounded-md ">
         Wheaty Bakery
       </div>
       <div className=" relative ">
