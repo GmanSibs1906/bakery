@@ -4,7 +4,7 @@ import { game, portfolio, profileCard, bot } from "../../assets/images";
 
 function Footer() {
   return (
-    <footer className="  w-full man flex-col bg-opacity-10 backdrop-blur-sm p-4 rounded-md bg-red-200">
+    <footer className=" hidden  w-full man flex-col bg-opacity-10 backdrop-blur-sm p-4 rounded-md bg-red-200">
       <div className=" flex flex-col md:flex-row w-full ">
         <div className=" md:hidden lg:flex md:w-[30%] justify-center items-center w-full">
           <div className=" text-[#80461B] text-[60px] font-custom text-center ">
