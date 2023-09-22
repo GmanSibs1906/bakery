@@ -31,7 +31,7 @@ export const products = [
         cat: "bread"
     },
     {
-        product_id: "311",
+        product_id: "312",
         name: "Wedding Cheese Cake",
         image: cheeseCake,
         desc: "Elegant wedding cheese cake",
@@ -79,6 +79,7 @@ export const products = [
         cat: "cupCake"
     },
     {
+        product_id: "311",
         name: "Milk Tart",
         image: milkTart,
         desc: "Classic South African milk tart",

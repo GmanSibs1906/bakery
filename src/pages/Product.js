@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import { useParams } from 'react-router-dom';
-import { milkTart } from "../assets/images";
 import { products } from "../assets/data/productData";
 import RelatedProduct from "../componants/products/RelatedProduct";
 
@@ -18,7 +17,7 @@ function Product() {
                 setCategory(item.cat)
             }
         })
-    }, [product])
+    }, [product, id])
 
   return (
     <div className=" min-h-[85vh] flex flex-col w-full justify-center items-center mt-[-20px] md:mt-[-50px] ">
@@ -56,7 +55,7 @@ function Product() {
         <div className=" w-full flex justify-center ">
             <div className=" w-[75vw] flex flex-col md:flex-row justify-evenly items-center " >
                 {products.map((item) => {
-                  if (relatedProductCount < 7 ) {
+                  if (relatedProductCount < 11 ) {
                     relatedProductCount ++
                     console.log(relatedProductCount)
                     if (item.cat === category) {

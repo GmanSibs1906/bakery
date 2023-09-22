@@ -13,6 +13,10 @@ import banner from "./baker.jpg";
 import wheat from "./wheat.png";
 import PastryChef from "./PastryChef.jpg";
 
+// about page
+import about from "./about.jpg";
+import aboutOne from "./aboutOne.jpg";
+
 // products
 import bananaMuffin from "./banana-muffin.jpg";
 import challahRolls from "./challah-rolls.jpg";
@@ -37,6 +41,10 @@ export {
     portfolio,
     profileCard,
     bot,
+
+    // about page
+    about,
+    aboutOne,
 
     // home banner 
     banner,

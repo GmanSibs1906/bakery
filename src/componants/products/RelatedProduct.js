@@ -7,7 +7,6 @@ function RelatedProduct({ image, id }) {
   // set new url path product and reload page to show clicked
   const handleClick = () => {
     navigate(`/product/${id}`);
-    window.location.reload();
   };
 
   return (
