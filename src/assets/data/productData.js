@@ -20,7 +20,8 @@ export const products = [
         image: bananaMuffin,
         desc: "Delicious banana flavoured muffins",
         price: 25,
-        cat: "cupCake"
+        cat: "cupCake",
+        quantity: 1,
     },
     {
         product_id: "302",
@@ -28,7 +29,8 @@ export const products = [
         image: challahRolls,
         desc: "Freshly baked challah rolls",
         price: 18,
-        cat: "bread"
+        cat: "bread",
+        quantity: 1,
     },
     {
         product_id: "312",
@@ -36,7 +38,8 @@ export const products = [
         image: cheeseCake,
         desc: "Elegant wedding cheese cake",
         price: 85,
-        cat: "cake"
+        cat: "cake",
+        quantity: 1,
     },
     {
         product_id: "303",
@@ -44,7 +47,8 @@ export const products = [
         image: chocolateCake,
         desc: "Rich and decadent chocolate cake",
         price: 50,
-        cat: "cake"
+        cat: "cake",
+        quantity: 1,
     },
     {
         product_id: "304",
@@ -52,7 +56,8 @@ export const products = [
         image: frenchPastries,
         desc: "Assortment of delicious French pastries",
         price: 30,
-        cat: "bread"
+        cat: "bread",
+        quantity: 1,
     },
     {
         product_id: "305",
@@ -60,7 +65,8 @@ export const products = [
         image: fruitCheese,
         desc: "Creamy fruit-flavored cheese cake",
         price: 22,
-        cat: "cake"
+        cat: "cake",
+        quantity: 1,
     },
     {
         product_id: "306",
@@ -68,7 +74,8 @@ export const products = [
         image: garlicRolls,
         desc: "Garlic-infused soft rolls",
         price: 15,
-        cat: "bread"
+        cat: "bread",
+        quantity: 1,
     },
     {
         product_id: "307",
@@ -76,7 +83,8 @@ export const products = [
         image: homemadeCupcakes,
         desc: "Homemade assorted cupcakes",
         price: 28,
-        cat: "cupCake"
+        cat: "cupCake",
+        quantity: 1,
     },
     {
         product_id: "311",
@@ -92,7 +100,8 @@ export const products = [
         image: appleTart,
         desc: "Delicious apple tart with a flaky crust",
         price: 24,
-        cat: "pastry"
+        cat: "pastry",
+        quantity: 1,
     },
     {
         product_id: "309",
@@ -100,7 +109,8 @@ export const products = [
         image: vanillaCupcake,
         desc: "Classic vanilla-flavored cupcake",
         price: 22,
-        cat: "cupCake"
+        cat: "cupCake",
+        quantity: 1,
     },
     {
         product_id: "310",
@@ -108,6 +118,7 @@ export const products = [
         image: birthdayCake,
         desc: "Colorful birthday cake with sprinkles",
         price: 40,
-        cat: "cake"
+        cat: "cake",
+        quantity: 1,
     },
 ]
