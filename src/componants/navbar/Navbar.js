@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { basket } from "../../assets/images";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { calculateTotals } from "../../redux/features/cart/cartSlice";
 
 function Navbar() {
-  const quantity = useSelector((store) => store.cart.quantity);
+  const dispatch = useDispatch();
+  const { quantity } = useSelector((store) => store.cart);
+  dispatch(calculateTotals());
+  useEffect(() => {}, [quantity]);
 
   return (
     <div className=" fixed top-0 z-50 w-full h-[50px] bg-[#80461B] bg-opacity-10 backdrop-blur-sm flex justify-between items-center ">
