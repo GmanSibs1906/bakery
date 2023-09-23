@@ -92,7 +92,8 @@ export const products = [
         image: milkTart,
         desc: "Classic South African milk tart",
         price: 20,
-        cat: "pastry"
+        cat: "pastry",
+        quantity: 1,
     },
     {
         product_id: "308",

@@ -1,11 +1,12 @@
 import React from "react";
 import CartItem from "../componants/cart/CartItem";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { clearCart } from "../redux/features/cart/cartSlice";
 
 function Cart() {
   const { cartItems, quantity, total } = useSelector((store) => store.cart);
-
+  const dispatch = useDispatch();
   // empty cart
   if (quantity < 1) {
     return (
@@ -39,7 +40,7 @@ function Cart() {
           <span className="flex">R{total}</span>
         </h3>
         <div className="flex w-full justify-center items-center">
-          <button className="flex w-[150px] h-[40px] justify-center items-center bg-[#80461B] text-white my-[50px] rounded-md">
+          <button className="flex w-[150px] h-[40px] justify-center items-center bg-[#80461B] text-white my-[50px] rounded-md" onClick={()=>{dispatch(clearCart())}}>
             Clear Cart
           </button>
         </div>
