@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { products } from "../assets/data/productData";
 import RelatedProduct from "../componants/products/RelatedProduct";
 import { useDispatch } from "react-redux";
@@ -11,7 +11,6 @@ function Product() {
   const [product, setProduct] = useState({});
   const [category, setCategory] = useState("");
   let relatedProductCount = 0;
-  const [productQuantity, setProductQuantity] = useState(1)
 
   useEffect(() => {
     products.map((item) => {
@@ -22,8 +21,12 @@ function Product() {
     });
   }, [product, id]);
 
+  useEffect(()=> {
+    window.scroll(0,0)
+  },[])
+
   return (
-    <div className=" min-h-[85vh] flex flex-col w-full justify-center items-center mt-[-20px] md:mt-[-50px] ">
+    <div id="product" className=" min-h-[85vh] flex flex-col w-full justify-center items-center mt-[-20px] md:mt-[-50px] ">
       {/* product info */}
       <div className="  bg-[#80461B] bg-opacity-10 backdrop-blur-sm flex flex-col md:flex-row w-full justify-center items-center h-[530px] md:h-[450px] pt-[100px] pb-[20px]  ">
         {/* left side ---- image container */}
@@ -46,13 +49,19 @@ function Product() {
             onClick={() => {
               dispatch(addToCart(product.product_id));
             }}
-            className=" w-[140px] h-[30px] bg-[#80461B] flex justify-center items-center rounded-sm text-[#e9d9d9]"
+            className=" w-[140px] h-[30px] bg-[#80461B] flex justify-center items-center rounded-md text-[#e9d9d9]"
           >
             Add to cart
           </button>
+          
           <p className=" mt-[15px] text-sm font-light text-slate-700 ">
             {product.desc}
           </p>
+          <Link to="/#shop">
+          <button className="w-[140px] h-[30px] bg-[#80471b00] border border-[#80461B] flex justify-center items-center rounded-md text-[#80461B]">
+            Back to shop
+          </button>
+        </Link>
         </div>
       </div>
 
